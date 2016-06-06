@@ -46,64 +46,93 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    playBtn.frame = CGRectMake(100, 300, 60, 30);
+    playBtn.backgroundColor = [UIColor redColor];
+    playBtn.titleLabel.text = @"click me";
+    [playBtn addTarget:self action:@selector(playBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playBtn];
+    
+    UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    stopBtn.frame = CGRectMake(200, 300, 60, 30);
+    stopBtn.backgroundColor = [UIColor redColor];
+    stopBtn.titleLabel.text = @"click me";
+    [stopBtn addTarget:self action:@selector(stopBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stopBtn];
+    
+    self.view.backgroundColor = [UIColor yellowColor];
+}
+
+- (void)playBtnClicked{
+    NSLog(@"playBtnClicked");
+    self.animationView.hidden = NO;
+//    cocos2d::Director::getInstance()->restart();
+}
+
+- (void)stopBtnClicked{
+    NSLog(@"stopBtnClicked");
+    self.animationView.hidden = YES;
+//    cocos2d::Director::getInstance()->pause();
+    
 }
  
-*/
+
 // Override to allow orientations other than the default portrait orientation.
 // This method is deprecated on ios6
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    if (SimpleConfigParser::getInstance()->isLanscape()) {
-        return UIInterfaceOrientationIsLandscape( interfaceOrientation );
-    }else{
-        return UIInterfaceOrientationIsPortrait( interfaceOrientation );
-    }
-}
-
-// For ios6, use supportedInterfaceOrientations & shouldAutorotate instead
-- (NSUInteger) supportedInterfaceOrientations{
-#ifdef __IPHONE_6_0
-    if (SimpleConfigParser::getInstance()->isLanscape()) {
-        return UIInterfaceOrientationMaskLandscape;
-    }else{
-        return UIInterfaceOrientationMaskPortrait;
-    }
-#endif
-}
-
-- (BOOL) shouldAutorotate {
-    if (SimpleConfigParser::getInstance()->isLanscape()) {
-        return YES;
-    }else{
-        return NO;
-    }
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-
-    cocos2d::GLView *glview = cocos2d::Director::getInstance()->getOpenGLView();
-
-    if (glview)
-    {
-        CCEAGLView *eaglview = (__bridge CCEAGLView*) glview->getEAGLView();
-
-        if (eaglview)
-        {
-            CGSize s = CGSizeMake([eaglview getWidth], [eaglview getHeight]);
-            cocos2d::Application::getInstance()->applicationScreenSizeChanged((int) s.width, (int) s.height);
-        }
-    }
-}
-
-//fix not hide status on ios7
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+//    if (SimpleConfigParser::getInstance()->isLanscape()) {
+//        return UIInterfaceOrientationIsLandscape( interfaceOrientation );
+//    }else{
+//        return UIInterfaceOrientationIsPortrait( interfaceOrientation );
+//    }
+//}
+//
+//// For ios6, use supportedInterfaceOrientations & shouldAutorotate instead
+//- (NSUInteger) supportedInterfaceOrientations{
+//#ifdef __IPHONE_6_0
+//    if (SimpleConfigParser::getInstance()->isLanscape()) {
+//        return UIInterfaceOrientationMaskLandscape;
+//    }else{
+//        return UIInterfaceOrientationMaskPortrait;
+//    }
+//#endif
+//}
+//
+//- (BOOL) shouldAutorotate {
+//    if (SimpleConfigParser::getInstance()->isLanscape()) {
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+//}
+//
+//- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+//    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+//
+//    cocos2d::GLView *glview = cocos2d::Director::getInstance()->getOpenGLView();
+//
+//    if (glview)
+//    {
+//        CCEAGLView *eaglview = (__bridge CCEAGLView*) glview->getEAGLView();
+//
+//        if (eaglview)
+//        {
+//            CGSize s = CGSizeMake([eaglview getWidth], [eaglview getHeight]);
+//            cocos2d::Application::getInstance()->applicationScreenSizeChanged((int) s.width, (int) s.height);
+//        }
+//    }
+//}
+//
+////fix not hide status on ios7
+//- (BOOL)prefersStatusBarHidden
+//{
+//    return YES;
+//}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

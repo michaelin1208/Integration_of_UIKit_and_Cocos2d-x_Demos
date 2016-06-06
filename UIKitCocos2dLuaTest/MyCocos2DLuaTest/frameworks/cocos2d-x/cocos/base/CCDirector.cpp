@@ -256,6 +256,8 @@ void Director::setGLDefaultValues()
     setAlphaBlending(true);
     setDepthTest(false);
     setProjection(_projection);
+    
+    glClearColor(0, 0, 0, 0);    //michaelin
 }
 
 // Draw the Scene

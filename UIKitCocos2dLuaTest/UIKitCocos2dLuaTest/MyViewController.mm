@@ -39,32 +39,39 @@
 
 - (void)btnClicked{
     NSLog(@"btn clicked ");
-    cocos2d::Application *app = cocos2d::Application::getInstance();
-    app->initGLContextAttrs();
-    cocos2d::GLViewImpl::convertAttrs();
 
     // Override point for customization after application launch.
 
+    CGRect animationFrame = CGRectMake(0, 0, self.view.frame.size.width, 300);
+    
     // Add the view controller's view to the window and display.
-    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: self.view.frame
-                                     pixelFormat: (__bridge NSString*)cocos2d::GLViewImpl::_pixelFormat
-                                     depthFormat: cocos2d::GLViewImpl::_depthFormat
+    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: animationFrame
+                                     pixelFormat: kEAGLColorFormatRGBA8
+                                     depthFormat: GL_DEPTH24_STENCIL8_OES
                               preserveBackbuffer: NO
                                       sharegroup: nil
                                    multiSampling: NO
                                  numberOfSamples: 0 ];
+    glClearColor(0, 0, 0, 0);
+    eaglView.backgroundColor = [UIColor clearColor];
+    eaglView.opaque = NO;
 
     [eaglView setMultipleTouchEnabled:YES];
 
     // Use RootViewController manage CCEAGLView
     RootViewController *tempViewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
 //    tempViewController.wantsFullScreenLayout = YES;
-    tempViewController.view = eaglView;
+    tempViewController.animationView = eaglView;
+    tempViewController.animationView.hidden = YES;
+    [tempViewController.view addSubview:tempViewController.animationView];
 
     [self presentViewController:tempViewController animated:YES completion:^{
         
     }];
-
+    
+    cocos2d::Application *app = cocos2d::Application::getInstance();
+    app->initGLContextAttrs();
+    cocos2d::GLViewImpl::convertAttrs();
     // IMPORTANT: Setting the GLView should be done after creating the RootViewController
     cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView((__bridge void*)eaglView);
     cocos2d::Director::getInstance()->setOpenGLView(glview);
