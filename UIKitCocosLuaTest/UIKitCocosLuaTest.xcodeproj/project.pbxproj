@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0154D0ED1D057789005A9D9D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0154D0EB1D057789005A9D9D /* AppDelegate.cpp */; };
+		0154D0F51D0577A4005A9D9D /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0154D0F41D0577A4005A9D9D /* AppController.mm */; };
 		016283861D05125300908B6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 016283851D05125300908B6A /* main.m */; };
-		016283891D05125300908B6A /* MyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 016283881D05125300908B6A /* MyAppDelegate.m */; };
-		0162838C1D05125300908B6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0162838B1D05125300908B6A /* ViewController.m */; };
-		0162838F1D05125300908B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0162838D1D05125300908B6A /* Main.storyboard */; };
+		0162838C1D05125300908B6A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0162838B1D05125300908B6A /* ViewController.mm */; };
 		016283911D05125300908B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016283901D05125300908B6A /* Assets.xcassets */; };
 		016283941D05125300908B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016283921D05125300908B6A /* LaunchScreen.storyboard */; };
 		0162839F1D05125400908B6A /* UIKitCocosLuaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0162839E1D05125400908B6A /* UIKitCocosLuaTestTests.m */; };
 		016283AA1D05125400908B6A /* UIKitCocosLuaTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 016283A91D05125400908B6A /* UIKitCocosLuaTestUITests.m */; };
-		019FC33F1D051790008DABFC /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019FC3231D051790008DABFC /* AppController.mm */; };
 		019FC3401D051790008DABFC /* build-cfg.json in Resources */ = {isa = PBXBuildFile; fileRef = 019FC3241D051790008DABFC /* build-cfg.json */; };
 		019FC3411D051790008DABFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 019FC3251D051790008DABFC /* Default-568h@2x.png */; };
 		019FC3421D051790008DABFC /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 019FC3261D051790008DABFC /* Default-667h@2x.png */; };
@@ -40,7 +39,6 @@
 		019FC3551D051790008DABFC /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 019FC3391D051790008DABFC /* Icon-87.png */; };
 		019FC3561D051790008DABFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 019FC33A1D051790008DABFC /* Info.plist */; };
 		019FC3581D051790008DABFC /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019FC33E1D051790008DABFC /* RootViewController.mm */; };
-		019FC3661D0517BC008DABFC /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019FC35A1D0517BC008DABFC /* AppDelegate.cpp */; };
 		019FC3671D0517BC008DABFC /* lang in Resources */ = {isa = PBXBuildFile; fileRef = 019FC35E1D0517BC008DABFC /* lang */; };
 		019FC3681D0517BC008DABFC /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 019FC35F1D0517BC008DABFC /* lua_debugger.c */; };
 		019FC3691D0517BC008DABFC /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 019FC3611D0517BC008DABFC /* RuntimeLuaImpl.cpp */; };
@@ -65,6 +63,7 @@
 		019FC3901D052162008DABFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019FC38F1D052162008DABFC /* CoreGraphics.framework */; };
 		019FC3AF1D05252F008DABFC /* libsimulator iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019FC3AA1D052506008DABFC /* libsimulator iOS.a */; };
 		019FC3B01D052535008DABFC /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019FC39B1D05229A008DABFC /* libluacocos2d iOS.a */; };
+		01D34FCC1D055216005582E3 /* CocosManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01D34FCB1D055216005582E3 /* CocosManager.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,13 +161,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0154D0EB1D057789005A9D9D /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		0154D0EC1D057789005A9D9D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0154D0F31D0577A4005A9D9D /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		0154D0F41D0577A4005A9D9D /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 		016283811D05125300908B6A /* UIKitCocosLuaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCocosLuaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016283851D05125300908B6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		016283871D05125300908B6A /* MyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
-		016283881D05125300908B6A /* MyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppDelegate.m; sourceTree = "<group>"; };
 		0162838A1D05125300908B6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0162838B1D05125300908B6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0162838E1D05125300908B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0162838B1D05125300908B6A /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		016283901D05125300908B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016283931D05125300908B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		016283951D05125300908B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,8 +179,6 @@
 		016283A91D05125400908B6A /* UIKitCocosLuaTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitCocosLuaTestUITests.m; sourceTree = "<group>"; };
 		016283AB1D05125400908B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		019FC3151D05176C008DABFC /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "MyCocos2DLuaTest/frameworks/cocos2d-x/build/cocos2d_libs.xcodeproj"; sourceTree = "<group>"; };
-		019FC3221D051790008DABFC /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		019FC3231D051790008DABFC /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 		019FC3241D051790008DABFC /* build-cfg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "build-cfg.json"; sourceTree = "<group>"; };
 		019FC3251D051790008DABFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		019FC3261D051790008DABFC /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
@@ -207,8 +205,6 @@
 		019FC33C1D051790008DABFC /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		019FC33D1D051790008DABFC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		019FC33E1D051790008DABFC /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
-		019FC35A1D0517BC008DABFC /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
-		019FC35B1D0517BC008DABFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		019FC35D1D0517BC008DABFC /* CodeIDESupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeIDESupport.h; sourceTree = "<group>"; };
 		019FC35E1D0517BC008DABFC /* lang */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lang; sourceTree = "<group>"; };
 		019FC35F1D0517BC008DABFC /* lua_debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_debugger.c; sourceTree = "<group>"; };
@@ -237,6 +233,8 @@
 		019FC38F1D052162008DABFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		019FC3921D05229A008DABFC /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "MyCocos2DLuaTest/frameworks/cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		019FC3A21D052506008DABFC /* libsimulator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libsimulator.xcodeproj; path = "MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/proj.ios_mac/libsimulator.xcodeproj"; sourceTree = "<group>"; };
+		01D34FCA1D0551F9005582E3 /* CocosManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosManager.h; sourceTree = "<group>"; };
+		01D34FCB1D055216005582E3 /* CocosManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocosManager.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,12 +282,12 @@
 		016283781D05125300908B6A = {
 			isa = PBXGroup;
 			children = (
+				019FC3151D05176C008DABFC /* cocos2d_libs.xcodeproj */,
 				019FC3A21D052506008DABFC /* libsimulator.xcodeproj */,
 				019FC3921D05229A008DABFC /* cocos2d_lua_bindings.xcodeproj */,
 				019FC3911D052168008DABFC /* Frameworks */,
 				019FC3591D0517BC008DABFC /* Classes */,
 				019FC3211D051790008DABFC /* ios */,
-				019FC3151D05176C008DABFC /* cocos2d_libs.xcodeproj */,
 				016283831D05125300908B6A /* UIKitCocosLuaTest */,
 				0162839D1D05125400908B6A /* UIKitCocosLuaTestTests */,
 				016283A81D05125400908B6A /* UIKitCocosLuaTestUITests */,
@@ -311,11 +309,8 @@
 		016283831D05125300908B6A /* UIKitCocosLuaTest */ = {
 			isa = PBXGroup;
 			children = (
-				016283871D05125300908B6A /* MyAppDelegate.h */,
-				016283881D05125300908B6A /* MyAppDelegate.m */,
 				0162838A1D05125300908B6A /* ViewController.h */,
-				0162838B1D05125300908B6A /* ViewController.m */,
-				0162838D1D05125300908B6A /* Main.storyboard */,
+				0162838B1D05125300908B6A /* ViewController.mm */,
 				016283901D05125300908B6A /* Assets.xcassets */,
 				016283921D05125300908B6A /* LaunchScreen.storyboard */,
 				016283951D05125300908B6A /* Info.plist */,
@@ -363,8 +358,8 @@
 		019FC3211D051790008DABFC /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				019FC3221D051790008DABFC /* AppController.h */,
-				019FC3231D051790008DABFC /* AppController.mm */,
+				0154D0F31D0577A4005A9D9D /* AppController.h */,
+				0154D0F41D0577A4005A9D9D /* AppController.mm */,
 				019FC3241D051790008DABFC /* build-cfg.json */,
 				019FC3251D051790008DABFC /* Default-568h@2x.png */,
 				019FC3261D051790008DABFC /* Default-667h@2x.png */,
@@ -391,6 +386,8 @@
 				019FC33C1D051790008DABFC /* Prefix.pch */,
 				019FC33D1D051790008DABFC /* RootViewController.h */,
 				019FC33E1D051790008DABFC /* RootViewController.mm */,
+				01D34FCA1D0551F9005582E3 /* CocosManager.h */,
+				01D34FCB1D055216005582E3 /* CocosManager.mm */,
 			);
 			name = ios;
 			path = "MyCocos2DLuaTest/frameworks/runtime-src/proj.ios_mac/ios";
@@ -399,8 +396,8 @@
 		019FC3591D0517BC008DABFC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				019FC35A1D0517BC008DABFC /* AppDelegate.cpp */,
-				019FC35B1D0517BC008DABFC /* AppDelegate.h */,
+				0154D0EB1D057789005A9D9D /* AppDelegate.cpp */,
+				0154D0EC1D057789005A9D9D /* AppDelegate.h */,
 				019FC35C1D0517BC008DABFC /* ide-support */,
 				019FC3651D0517BC008DABFC /* lua_module_register.h */,
 			);
@@ -663,7 +660,6 @@
 				019FC3421D051790008DABFC /* Default-667h@2x.png in Resources */,
 				019FC3711D051969008DABFC /* src in Resources */,
 				016283911D05125300908B6A /* Assets.xcassets in Resources */,
-				0162838F1D05125300908B6A /* Main.storyboard in Resources */,
 				019FC34D1D051790008DABFC /* Icon-29.png in Resources */,
 				019FC34E1D051790008DABFC /* Icon-40.png in Resources */,
 				019FC3561D051790008DABFC /* Info.plist in Resources */,
@@ -707,14 +703,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				019FC36A1D0517BC008DABFC /* SimpleConfigParser.cpp in Sources */,
-				0162838C1D05125300908B6A /* ViewController.m in Sources */,
-				019FC33F1D051790008DABFC /* AppController.mm in Sources */,
-				016283891D05125300908B6A /* MyAppDelegate.m in Sources */,
-				019FC3661D0517BC008DABFC /* AppDelegate.cpp in Sources */,
+				0162838C1D05125300908B6A /* ViewController.mm in Sources */,
+				0154D0ED1D057789005A9D9D /* AppDelegate.cpp in Sources */,
+				01D34FCC1D055216005582E3 /* CocosManager.mm in Sources */,
 				019FC3691D0517BC008DABFC /* RuntimeLuaImpl.cpp in Sources */,
 				019FC3681D0517BC008DABFC /* lua_debugger.c in Sources */,
 				019FC3581D051790008DABFC /* RootViewController.mm in Sources */,
 				016283861D05125300908B6A /* main.m in Sources */,
+				0154D0F51D0577A4005A9D9D /* AppController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,14 +761,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0162838D1D05125300908B6A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0162838E1D05125300908B6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		016283921D05125300908B6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -787,7 +775,7 @@
 		016283AC1D05125400908B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -821,19 +809,30 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos/audio/include",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/extensions",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/luajit/include",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/tolua",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/extensions $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/luajit/include $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite";
 			};
 			name = Debug;
 		};
 		016283AD1D05125400908B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -861,11 +860,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos/audio/include",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/extensions",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/luajit/include",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/tolua",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/cocos $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/extensions $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/luajit/include $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/MyCocos2DLuaTest/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -873,24 +883,28 @@
 		016283AF1D05125400908B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UIKitCocosLuaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.UIKitCocosLuaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 			};
 			name = Debug;
 		};
 		016283B01D05125400908B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = UIKitCocosLuaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.UIKitCocosLuaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 			};
 			name = Release;
 		};
