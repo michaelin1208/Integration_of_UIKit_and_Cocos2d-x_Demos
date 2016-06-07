@@ -257,7 +257,7 @@ void Director::setGLDefaultValues()
     setDepthTest(false);
     setProjection(_projection);
     
-    glClearColor(0, 0, 0, 0);    //michaelin
+//    glClearColor(0, 0, 0, 0);    //michaelin
 }
 
 // Draw the Scene

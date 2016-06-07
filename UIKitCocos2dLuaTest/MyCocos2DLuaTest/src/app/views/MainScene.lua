@@ -8,7 +8,7 @@ function MainScene:onCreate()
         :addTo(self)
 
     -- add HelloWorld label
-    cc.Label:createWithSystemFont("Hello World", "Arial", 40)
+    cc.Label:createWithSystemFont("Hello de World", "Arial", 40)
         :move(display.cx, display.cy + 200)
         :addTo(self)
 
