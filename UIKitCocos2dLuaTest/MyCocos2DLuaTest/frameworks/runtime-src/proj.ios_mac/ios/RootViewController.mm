@@ -87,7 +87,6 @@
     
     // set default FPS
     Director::getInstance()->setAnimationInterval(1.0 / 60.0f);
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     
     // register lua module
     auto engine = LuaEngine::getInstance();
@@ -104,7 +103,6 @@
     //LuaStack* stack = engine->getLuaStack();
     //register_custom_function(stack->getLuaState());
     
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE
     auto runtimeEngine = RuntimeEngine::getInstance();
@@ -116,7 +114,6 @@
         NSLog(@"executeScriptFile src/main.lua");
     }
 #endif
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 - (void)stopBtnClicked{

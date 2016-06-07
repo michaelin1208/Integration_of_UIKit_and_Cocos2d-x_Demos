@@ -46,16 +46,15 @@
     
     // Add the view controller's view to the window and display.
     CCEAGLView *eaglView = [CCEAGLView viewWithFrame: animationFrame
-                                     pixelFormat: kEAGLColorFormatRGBA8
+                                     pixelFormat: kEAGLColorFormatRGBA8 //allow you to set the alpha value
                                      depthFormat: 0
                               preserveBackbuffer: NO
                                       sharegroup: nil
                                    multiSampling: NO
                                  numberOfSamples: 0 ];
     
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-    eaglView.backgroundColor = [UIColor clearColor];
-    eaglView.opaque = NO;
+    eaglView.backgroundColor = [UIColor clearColor];    //set the background color to clear color
+    eaglView.opaque = NO;       //let the view can be transparent
 
     [eaglView setMultipleTouchEnabled:YES];
 
@@ -74,10 +73,8 @@
 //    app->initGLContextAttrs();
 //    cocos2d::GLViewImpl::convertAttrs();
     //    // IMPORTANT: Setting the GLView should be done after creating the RootViewController
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView((__bridge void*)eaglView);
     cocos2d::Director::getInstance()->setOpenGLView(glview);
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 //
 //    app->run();
 }
